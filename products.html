@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script type="module" crossorigin src="/assets/getCartProducts-BeMDfBsG.js"></script>
+  <script type="module" crossorigin src="/assets/main-BgueCgId.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/getCartProducts-DG0TcqfZ.css">
+</head>
+<body>
+  <header class="section-navbar">
+
+    <section class="top_txt">
+      <div class="head container">
+        <div class="head_txt">
+          <p>Free shipping, 30-day return or refund guarantee.</p>
+        </div>
+        <div class="sing_in_up">
+          <a href="# ">SIGN IN</a>
+          <a href="# ">SIGN UP</a>
+        </div>
+      </div>
+
+
+    </section>
+
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <img
+            src="./images/logo.png"
+            alt="RSikchi E-com logo"
+            class="logo"
+            width="80%"
+            height="auto"
+          />
+        </a>
+      </div>
+      <nav class="navbar">
+        <ul>
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">about</a>
+            </li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link">products</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">contact</a>
+            </li>
+            <li class="nav-item">
+              <a 
+                href="addToCart.html" 
+                class="nav-link add-to-cart-button"
+                id="cartValue"
+                >
+                <i class="fa-solid fa-cart-arrow-down"> 0</i>
+              </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- start discount section -->
+  <section class="section-extra-product">
+    <div class="container grid grid-three--cols">
+
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>new year sale</p>
+          <h3>get and extra 50% off</h3>
+          <a href="#">Show now</a>
+        </div>
+        <div class="extra-img extra-laptop">
+          <img src="/assets/laptop-CT_LaLd8.png" alt="" />
+        </div>
+      </div>
+
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>new year sale</p>
+          <h3>30% discount on speakers</h3>
+          <a href="#">Show now</a>
+        </div>
+        <div class="extra-img">
+          <img src="/assets/headphoneEcom-Cx8W04La.png" alt="" />
+        </div>
+      </div>
+
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>new year sale</p>
+          <h3>get and extra 50% off</h3>
+          <a href="#">Show now</a>
+        </div>
+        <div class="extra-img">
+          <img src="/assets/smartphone-BWFz1yVQ.png" alt="" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- end discount section -->
+
+  <!-- =======================start policy ============= -->
+  <section class="section-policy">
+    <div class="container grid grid-four--cols">
+
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-truck-fast"></i>
+        </div>
+        <div class="div-policy-text">
+          <p>worldwide shipping</p>
+          <p>order above $100</p>
+        </div>
+      </div>
+
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-rotate"></i>
+        </div>
+        <div class="div-policy-text">
+          <p>Easy 30 Day Returns</p>
+          <p>Back Returns in 7 Days</p>
+        </div>
+      </div>
+
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+        </div>
+        <div class="div-policy-text">
+          <p>money back guarantee</p>
+          <p>guarantee with in 30-Days</p>
+        </div>
+      </div>
+
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-headset"></i>
+        </div>
+        <div class="div-policy-text">
+          <p>Easy Online Support</p>
+          <p>24/7 Any time support</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- =======================end policy =============   -->
+
+  <!--==================== product section start  ===============================-->
+  <section class="section-products container">
+    <div>
+      <h2 class="section-common--heading">Checkout RSikchi E-com</h2>
+    </div>
+
+    <section class="container">
+      <div id="productContainer">
+
+      </div>
+    </section>
+  </section>
+
+  <!-- product Template start -->
+  <template id="productTemplate">
+    <div class="cards" id="cardValue">
+      <article class="information [card]">
+
+        <span class="category"></span>
+        <div class="imageContainer">
+          <img class="productImage" src="" alt="" />
+        </div>
+       <h2 class="productName"></h2>
+        <div class="productRating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="productDescription"></p>
+
+        <div class="productPriceElement">
+          <p class="productPrice"></p>
+          <p class="productActualPrice"></p>
+        </div>
+
+        <div class="productStockElement">
+          <p class="productProperty">Total Stocks Available:</p>
+          <p class="productStock"></p>
+        </div>
+
+        <div class="productQuantityElement">
+          <p class="productProperty">Quantity</p>
+          <div class="stockElement">
+            <button class="cartIncrement">+</button>
+            <p class="productQuantity">1</p>
+            <button class="cartDecrement">-</button>
+          </div>
+        </div>
+
+        <button class="add-to-cart-button">
+          <i class="fa-solid fa-cart-arrow-down"> </i>Add To Cart
+        </button>
+      </article>
+    </div>
+  </template>
+  <!-- product Template end   -->
+
+  <!--==================== product section end    ===============================-->
+
+  <!-- footer section start -->
+
+  <footer class="section-footer">
+    <script src="footer.js"></script>
+  </footer>
+  <!-- footer section end   -->
+
+  
+</body>
+</html>

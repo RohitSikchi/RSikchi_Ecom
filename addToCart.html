@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-com Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script type="module" crossorigin src="/assets/addToCart-Pdah6bIU.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/getCartProducts-BeMDfBsG.js">
+  <link rel="stylesheet" crossorigin href="/assets/getCartProducts-DG0TcqfZ.css">
+</head>
+<body>
+
+<!-- =============================== header section start ======================= -->
+    <header class="section-navbar">
+        
+        <section class="top_txt">
+            <div class="head container">
+                <div class="head_txt">
+                    <p>Free shipping, 30-day return or refund guarantee.</p>
+                </div>
+                <div class="sing_in_up">
+                    <a href="# ">SIGN IN</a>
+                    <a href="# ">SIGN UP</a>
+                </div>
+          </div>
+          
+          
+        </section>
+        
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img
+                    src="./images/logo.png"
+                    alt="RSikchi E-com logo"
+                class="logo"
+                width="80%"
+                height="auto"
+                />
+            </a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">about</a>
+                </li>
+                <li class="nav-item">
+                  <a href="products.html" class="nav-link">products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">contact</a>
+                </li>
+                <li class="nav-item">
+                    <a 
+                    href="addToCart.html" 
+                    class="nav-link add-to-cart-button"
+                    id="cartValue"
+                    >
+                    <i class="fa-solid fa-cart-arrow-down"> 0</i>
+                </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+
+    </header>
+<!-- =============================== header section end ======================= ==========-->
+
+<!-- =======================product section start ============================= -->
+
+<section class="addToCartElement">
+
+    <div class="container">
+        <section>
+            <div id="productCartContainer">
+
+            </div>
+        </section>
+
+        <section class="productCartTotalElem">
+          <div class="productCartTotalElement">
+            <p>Selected Offer Summary</p>
+            <div class="productOrderTotal">
+
+                <div>
+                    <p>Sub Total:</p>
+                    <p class="productSubTotal">0</p>
+                </div>
+
+                <div>
+                    <p>Tax:</p>
+                    <p class="productTax">₹50</p>
+                </div>
+
+                <hr />
+
+                <div>
+                    <p>Final Total:</p>
+                    <p class="productFinalTotal">0</p>
+                </div>
+
+            </div>
+          </div>
+        </section> 
+    </div>
+
+</section>
+
+ <!-- Template for a product start-->
+ <template id="productCartTemplate">
+    <div class="cards" id="cardValue">
+      <article class="information [ card ]">
+
+        <div>
+          <span class="category"></span>
+        </div>
+
+        <div class="imageContainer">
+          <img class="productImage" src="" alt="" />
+        </div>
+
+        <h2 class="productName"></h2>
+
+        <p class="productPrice"></p>
+
+        <div class="stockElement">
+          <button class="cartIncrement">+</button>
+          <p class="productQuantity" data-quantity="1">1</p>
+          <button class="cartDecrement">-</button>
+        </div>
+
+        <button class="add-to-cart-button remove-to-cart-button">
+          Remove
+        </button>
+      </article>
+    </div>
+  </template>
+  <!-- Template for a product end -->
+<!--======================= product section end  =============================  -->
+
+<!-- =================================== footer section start ==================================== -->
+    
+    <footer class="section-footer">
+        <div class="footer-container container">
+    
+            <div class="content_1">
+                <img src="/assets/logo3-B5YsYRu2.png" alt="logo" />
+                <p>
+                    Welcome to RSikchi E-com , your ultimate destination for
+              cutting-edge gadgets!
+            </p>
+            <img src="/assets/cards-Cw9XJmIN.png" alt="cards" />
+          </div>
+          <div class="content_2">
+            <h4>SHOPPING</h4>
+            <a href="#">Computer Store</a>
+            <a href="#">Laptop Store</a>
+            <a href="#">Accessories</a>
+            <a href="#">Sales & Discount</a>
+          </div>
+          <div class="content_3">
+            <h4>Experience</h4>
+            <a href="./contact.html">Contact Us</a>
+            <a href="" target="_blank">Payment Method</a>
+            <a href="" target="_blank">Delivery</a>
+            <a href="" target="_blank">Return and Exchange</a>
+          </div>
+    
+        </div>
+        <div class="f-design">
+          <div class="f-design-txt">
+            <p>RSikchi E-com Design and Code by Rohit Sikchi</p>
+          </div>
+        </div>
+    </footer>
+
+<!-- =================================== footer section end ==================================== -->
+
+
+</body>
+</html>
